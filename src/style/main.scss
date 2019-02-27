@@ -1,0 +1,105 @@
+$colors: (
+    bgColor: #ffb22d,
+    adminColor:#FD8181
+    );
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+$navbarPadding: .9em 0px .9em 0px;
+$body_margin: 0;
+$boxPadding: 1.1em;
+
+#navbar {
+    
+    overflow: hidden;
+
+    #navbar-items{
+
+        display: block;
+        align-items: baseline;
+        padding: $navbarPadding;
+        text-decoration : none; 
+        color : #000;
+
+        #home{
+            margin-left: 1em;
+        }
+
+        #navbar-location-right{
+            float: right;
+            
+
+            #admin{
+                color: color(adminColor);    
+            }
+
+        }
+
+        a{
+            margin: .8em;
+            font-size: 1.3em;
+            text-decoration: none;
+        }
+    }
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: $body_margin;
+    font-family: sans-serif;
+
+    #bg{
+        background-color: color(bgColor);
+        height: 100%;
+        width: 100%;
+        clip-path: polygon(75% 0, 100% 16%, 60% 100%, 0 100%, 0 0);
+        z-index: -1;
+        position: absolute;
+    }
+}
+
+#conatiner-skills{
+    position: absolute;
+    padding: $boxPadding;
+    width: max-content;
+    height: max-content;
+    background-color: color(adminColor);
+    border-radius: 15%;
+    margin-right: 10px;
+    align-items: center;
+    align-content: space-between;
+    grid-area: "main"; 
+    left: 1.5em;
+}
+
+.center{
+  margin: auto;
+  width: 50%;
+}
+
+#contactFurther{
+  max-width: 400px;
+  font-size: 1.2em;
+  top: 10%;
+  color: color(adminColor);
+}
+
+#personal-information{
+  top: 100px;
+}
+
+.image{
+  width:100px;
+  height: 100px;
+}
+
+.split{
+  top: 10px;
+  margin-top: 5px;
+}
+

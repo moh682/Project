@@ -1,0 +1,98 @@
+#navbar {
+  overflow: hidden;
+}
+
+#navbar #navbar-items {
+  display: block;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 0.9em 0px 0.9em 0px;
+  text-decoration: none;
+  color: #000;
+}
+
+#navbar #navbar-items #home {
+  margin-left: 1em;
+}
+
+#navbar #navbar-items #navbar-location-right {
+  float: right;
+}
+
+#navbar #navbar-items #navbar-location-right #admin {
+  color: #FD8181;
+}
+
+#navbar #navbar-items a {
+  margin: .8em;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body #bg {
+  background-color: #ffb22d;
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: polygon(75% 0, 100% 16%, 60% 100%, 0 100%, 0 0);
+          clip-path: polygon(75% 0, 100% 16%, 60% 100%, 0 100%, 0 0);
+  z-index: -1;
+  position: absolute;
+}
+
+#conatiner-skills {
+  position: absolute;
+  padding: 1.1em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #FD8181;
+  border-radius: 15%;
+  margin-right: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  grid-area: "main";
+  left: 1.5em;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+}
+
+#contactFurther {
+  max-width: 400px;
+  font-size: 1.2em;
+  top: 10%;
+  color: #FD8181;
+}
+
+#personal-information {
+  top: 100px;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.split {
+  top: 10px;
+  margin-top: 5px;
+}
+/*# sourceMappingURL=main.css.map */
